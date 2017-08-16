@@ -6,3 +6,5 @@ Prerequisites / Minimum System Requirements:
   Python?
   Windows 7
 
+Notes:
+This release is in-process
