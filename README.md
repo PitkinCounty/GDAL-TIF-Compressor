@@ -10,6 +10,7 @@ Notes:
 This release is in-process
 
 (below is from the GDoc; needs formatting)
+
 GDAL-TIF-Compressor    Documentation
 Executive Summary
 The Geospatial Data Abstraction Library (GDAL) is a computer software library for reading and writing raster and vector geospatial data formats, and is released under the permissive X/MIT style free software license by the Open Source Geospatial Foundation. The GDAL_Translator is a custom Java application developed by the Pitkin County BITS Department. This application implements the ‘gdal_translate’ command (from the GDAL library) to compress TIFF aerial imagery. The GDAL_Translator loops through a user-defined input directory (non-recursive), compressing each TIFF file into the specified output directory using the original filename (up to an optional maximum number of files). The GUI will be responsive while the command executes, which takes ~1 min per file.  This compression reduces the TIFF file size by approximately 95%, with minimal degradation of the image, making aerial tiles easier to deploy to end-users.
