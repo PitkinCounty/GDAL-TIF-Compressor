@@ -1,7 +1,7 @@
 # GDAL-TIF-Compressor
 This java desktop app iterates through an INPUT directory and compresses any TIF files into an OUTPUT directory using the python command 'gdal_translate'.
 
-![screenshot](GDAL_Translator Screenshot.PNG)
+![screenshot](GDAL_Translator_Screenshot.PNG)
 
 ## Getting Started
 GDAL is a library for reading and writing raster and vector geospatial data formats. This GDAL_Translator is a custom Java application developed by the Pitkin County BITS Department. This application implements the ‘gdal_translate’ command (from GDAL). The GDAL_Translator loops through a user-defined input directory (non-recursive), compressing each TIFF file into the specified output directory using the original filename (up to an optional maximum number of files). The GUI will be responsive while the command executes, which takes ~1 min per file.  This compression reduces the TIFF file size by approximately 95%.
@@ -13,7 +13,7 @@ A common use case for this application is for processing large image sets from a
   Python?
   Windows 7?
 
-![screenshot](GDAL_Translator HELP.PNG)
+![screenshot](GDAL_Translator_HELP.PNG)
 
 ### Install / Run the Application
 Make sure the system requirements have been met, including prerequisite software (see “Version Info”).
