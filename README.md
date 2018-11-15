@@ -1,28 +1,25 @@
 # GDAL-TIF-Compressor
-Java desktop app that iterates through an input directory and compresses any TIF files into an output directory using the python command 'gdal_translate'.
+This java desktop app iterates through an INPUT directory and compresses any TIF files into an OUTPUT directory using the python command 'gdal_translate'.
 
-## Prerequisites / Minimum System Requirements:
-  OSGeo4W
+## Getting Started
+GDAL is a library for reading and writing raster and vector geospatial data formats. This GDAL_Translator is a custom Java application developed by the Pitkin County BITS Department. This application implements the ‘gdal_translate’ command (from GDAL). The GDAL_Translator loops through a user-defined input directory (non-recursive), compressing each TIFF file into the specified output directory using the original filename (up to an optional maximum number of files). The GUI will be responsive while the command executes, which takes ~1 min per file.  This compression reduces the TIFF file size by approximately 95%.
+
+A common use case for this application is for processing large image sets from a fly-over or reducing a TIFF file for distribution.   Typical users include the Pitkin County GIS Department.
+
+### Prerequisites / Minimum System Requirements:
+  Geospatial Data Abstraction Library (GDAL)
   Python?
-  Windows 7
+  Windows 7?
 
-Notes:
-This release is in-process
+### Install / Run the Application
+Make sure the system requirements have been met, including prerequisite software (see “Version Info”).
 
-(below is from the GDoc; needs formatting)
-
-## GDAL-TIF-Compressor    Documentation
-### Executive Summary
-The Geospatial Data Abstraction Library (GDAL) is a computer software library for reading and writing raster and vector geospatial data formats, and is released under the permissive X/MIT style free software license by the Open Source Geospatial Foundation. The GDAL_Translator is a custom Java application developed by the Pitkin County BITS Department. This application implements the ‘gdal_translate’ command (from the GDAL library) to compress TIFF aerial imagery. The GDAL_Translator loops through a user-defined input directory (non-recursive), compressing each TIFF file into the specified output directory using the original filename (up to an optional maximum number of files). The GUI will be responsive while the command executes, which takes ~1 min per file.  This compression reduces the TIFF file size by approximately 95%, with minimal degradation of the image, making aerial tiles easier to deploy to end-users.
-
-A common use case for this application is for processing large image sets from a fly-over or reducing a TIFF file to share.   Typical users include the Pitkin County GIS Department (i.e. Mary Lackner).
-
+The Java Application is distributed as a JAR file (see icon on right). Users running Windows based operating systems can double click this file to run the application. Once the application is running, the user can follow the process defined below to use the GDAL_Translator.
 
 
 ## User Guide
-### Install / Run the Application
-Before trying to run this application, the user must make sure the system requirements have been met, including prerequisite software (see “Version Info”). The Java Application is distributed as a JAR file (see icon on right). Users running Windows based operating systems can double click this file to run the application. Once the application is running, the user can follow the process defined below to use the GDAL_Translator.
-Using the Application (SOP)
+
+## Using the Application (SOP)
 Users can modify the following parameters within the GUI prior to clicking the ‘Translate’ button:
 Where the uncompressed images can be found (Input Directory)
 Where the compressed images should be sent (Output Directory)
@@ -63,39 +60,6 @@ What happens if the output directory does not exist?
 Currently the translation fails and throws an error. The GUI does not crash and can be triggered again.
 What should happen: Create the directory, no message to user
 
-
-
-
-## Version Info
-### Current Version
-1.0
-Release Date
-8/1/2017
-Stakeholders
-Andrew Shewmaker (Dev), Mary Lackner,
-Metrics
-Minutes per file = 1 minute, Ease-of-use = 10/10
-Limitations / Requirements
-System Requirements
-Windows 7 or higher?
-Prerequisite Software
-OSGeo4W v1
-Features
-Does not provide any support for recursive or sub-directory compression
-
-
-### Release Notes
-This section is a running log of features and bugs that were fixed by releasing each version. The release version # is indicated by the outline value (#. Aaa), and the release date is indicated in the brackets ([mm/dd/yyyy])
-
-[06/2017] Jennifer Broderick did the initial development for this project
-Andrew Shewmaker took over development in June 2017. The GUI Runs, error thrown on ‘gdal_translate’ command
-No notes
-Successfully executed ‘gdal_translate’ command!
-Failed attempt at implementing a background worker
-Modified to operate on an entire directory.
-[6/30/2017] Released by Andrew to test on Mary’s computer
-[07/06/2017] Implemented a background worker to reduce slowing down the computer.
-[unreleased] Adding documentation, cleaning up error handling
 
 ## Release Process
 The source code for this project is currently located on Andrew Shewmaker’s desktop. Moving the code to a centralized location should be a high priority. When changes are made to the source code, the application can be ‘published’/’deployed’ by distributing the JAR file from the ../dist/ directory. While the project is only ready for internal use Andrew will distribute the JAR file by copying it to a network drive. If the application is released for public/general use, we could provide access from PCIN.
