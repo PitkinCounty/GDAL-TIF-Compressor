@@ -19,9 +19,10 @@ The Java Application is distributed as a JAR file 'GDAL_Translate.jar', which ca
 ## Usage
 Users can modify the following parameters within the GUI prior to clicking the **Translate** button:
 * **Input Directory** - Where the uncompressed images can be found
-* **Output Directory** - Where the compressed images should be sent
+* **Output Directory** - Where the compressed images will be sent
 * **# of Files** - Max number of files to compress
   * If a positive integer (≥0), the app will exit after that # of files
+  * If left blank, the entire directory will be processed
   * NOTE: Output files that already exist do not count towards the number of files.
 
 ![screenshot](GDAL_Translator_Screenshot.PNG)
