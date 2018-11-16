@@ -11,8 +11,6 @@ A common use case for this application is for processing large image sets from a
 * Python 2?
 * Windows 7?
 
-![screenshot](GDAL_Translator_HELP.PNG)
-
 ### Install / Run the Application
 Make sure the system requirements have been met.
 
