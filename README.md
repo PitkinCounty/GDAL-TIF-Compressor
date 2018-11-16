@@ -42,7 +42,7 @@ A common use case for this application is for processing large image sets from a
 ### Install / Run the Application
 Make sure the system requirements have been met.
 
-The Java Application is distributed as a JAR file 'GDAL_Transale.jar', which can be downloaded from this GitHub Repo. Windows users can download 'GDAL_Transale.jar' then double click this file to run the application.
+The Java Application is distributed as a JAR file 'GDAL_Transale.jar', which can be downloaded from this GitHub Repo. Windows users can download then double click this file to run the application.
 
 ## Release Process
 The source code and compiled JAR executable for this project were checked into this GitHub Repo upon initial release, and will be updated as this documentation is complete.
@@ -74,5 +74,5 @@ This section is used to document requests for additional features and/or bug fix
     * Example: Translate Failed: Invalid input directory, Dir = 'inputDir’
   * Translation is cancelled
 * What happens if the output directory does not exist?
- * Currently the translation fails and throws an error. The GUI does not crash and can be triggered again.
- * What should happen: Create the directory, no message to user 
+  * Currently the translation fails and throws an error. The GUI does not crash and can be triggered again.
+  * What should happen: Create the directory, no message to user 
