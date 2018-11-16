@@ -3,26 +3,7 @@ This java desktop app iterates through an INPUT directory and compresses any TIF
 
 ![screenshot](GDAL_Translator_Screenshot.PNG)
 
-## Getting Started
-GDAL is a library for reading and writing raster and vector geospatial data formats. This application loops through a user-defined input directory (non-recursive, optional: maximum number of files), calling ‘gdal_translate’ to compress each TIFF file into the specified output directory using the original filename. The GUI will be responsive while the command executes, which takes ~1 min per file and acheives approximately 95% compression.
-
-A common use case for this application is for processing large image sets from a fly-over or reducing a TIFF file for distribution.   Typical users include the Pitkin County GIS Department.
-
-### Prerequisites / Minimum System Requirements:
-  Geospatial Data Abstraction Library (GDAL)
-  
-  Python 2?
-  
-  Windows 7?
-
-![screenshot](GDAL_Translator_HELP.PNG)
-
-### Install / Run the Application
-Make sure the system requirements have been met.
-
-The Java Application is distributed as a JAR file (see icon on right). Users running Windows based operating systems can download 'GDAL_Transale.jar' then double click this file to run the application.
-
-## User Guide
+## Usage
 Users can modify the following parameters within the GUI prior to clicking the ‘Translate’ button:
 Where the uncompressed images can be found (Input Directory)
 Where the compressed images should be sent (Output Directory)
@@ -43,6 +24,27 @@ The log will indicate what task it is starting.
 Feedback is logged for each file completed.
 Finally the word ‘Complete’ will indicate the task is finished, and the ‘Translate’ button will be re-enabled.
 Wait for completion
+
+## Getting Started
+GDAL is a library for reading and writing raster and vector geospatial data formats. This application loops through a user-defined input directory (non-recursive, optional: maximum number of files), calling ‘gdal_translate’ to compress each TIFF file into the specified output directory using the original filename. The GUI will be responsive while the command executes, which takes ~1 min per file and acheives approximately 95% compression.
+
+A common use case for this application is for processing large image sets from a fly-over or reducing a TIFF file for distribution.   Typical users include the Pitkin County GIS Department.
+
+### Prerequisites / Minimum System Requirements:
+  Geospatial Data Abstraction Library (GDAL)
+  
+  Python 2?
+  
+  Windows 7?
+
+![screenshot](GDAL_Translator_HELP.PNG)
+
+### Install / Run the Application
+Make sure the system requirements have been met.
+
+The Java Application is distributed as a JAR file (see icon on right). Users running Windows based operating systems can download 'GDAL_Transale.jar' then double click this file to run the application.
+
+
 
 
 
@@ -65,15 +67,22 @@ What should happen: Create the directory, no message to user
 
 
 ## Release Process
-The source code for this project is currently located on Andrew Shewmaker’s desktop. Moving the code to a centralized location should be a high priority. When changes are made to the source code, the application can be ‘published’/’deployed’ by distributing the JAR file from the ../dist/ directory. While the project is only ready for internal use Andrew will distribute the JAR file by copying it to a network drive. If the application is released for public/general use, we could provide access from PCIN.
-Future Development
+The source code for this project was checked into this GitHub Repo upon initial release, and will be updated as this documentation is complete.
+
+Build with NetBeans IDE, the project can be ‘published’/’deployed’ by distributing the JAR file from the ../dist/ directory (or this GitHub Repo).
+
+
+### Future Development
 This section is used to document requests for additional features and/or bug fixes.
-Recursive Option
-Review “file exists” logic. We could ask the user?
-Implement ‘Cancel’ functionality while loop is running
-Option to open output directory upon completion
-Add some compression statistics to Log
-When input directory is set, we can count number of TIFF files, then use that number to estimate total time required, and make decisions about warning the user
+# * confirm that GDAL_Libraries are embeded in this .jar executable
+*Recursive Option
+*Review “file exists” logic. We could ask the user?
+* Implement ‘Cancel’ functionality while loop is running
+* Option to open output directory upon completion
+* Add some compression statistics to Log
+* When input directory is set, we can count number of TIFF files, then use that number to estimate total time required, and make decisions about warning the user
+
+
 Final State: Application is stable and available on PCIN including clear documentation
 Is there a way to embed the GDAL python (or java) commands in our code? Such that deploying the GDAL_Translator does not require any prerequisites?
 
