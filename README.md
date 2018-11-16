@@ -12,11 +12,11 @@ Users can modify the following parameters within the GUI prior to clicking the *
 
 ~~### Set Input/Output Directory
 
-~~Click the ‘Set Input Directory’ button, browse for the directory where **uncompressed image files** exist.
+* ~~Click the ‘Set Input Directory’ button, browse for the directory where **uncompressed image files** exist.~~
 
-~~Click the ‘Set Output Directory’ button, browse for the directory where **compressed image files** should be written.
+* ~~Click the ‘Set Output Directory’ button, browse for the directory where **compressed image files** should be written.~~
 
-~~### Review # of Files
+### ~~Review # of Files~~
 If a positive integer (≥0) then the application will only compress the specified number of files, otherwise all files are processed. **NOTE**: Output files that already exist do not count towards the number of files.
 
 ### Click ‘Translate’
@@ -59,8 +59,8 @@ This section is used to document requests for additional features and/or bug fix
 * Add some compression statistics to Log
 * When input directory is set, we can count number of TIFF files, then use that number to estimate total time required, and make decisions about warning the user
 
-## FAQ (and Test Cases)
-~~What if the ‘# of Files’ is not-numeric? A positive integer? Less than 0?
+## ~~FAQ (and Test Cases)~~
+What if the ‘# of Files’ is not-numeric? A positive integer? Less than 0?
 If any error is thrown trying to convert the ‘# of Files’ to an integer, a message is logged, the value will default to 1 file, and the translation is cancelled.
 If a positive integer is entered, the maximum number of files to be processed is set to the value provided.
 *WARNING* If an integer value of <= 0 is entered, the program will process ALL files. The user will not be prompted or warned, and this could take a considerable amount of time (at ~1 minute per TIF file).
