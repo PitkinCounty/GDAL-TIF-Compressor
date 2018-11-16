@@ -1,32 +1,6 @@
 # GDAL-TIF-Compressor
 This java desktop app iterates through an INPUT directory and compresses any TIF files into an OUTPUT directory using the python command 'gdal_translate'.
 
-![screenshot](GDAL_Translator_Screenshot.PNG)
-
-## Usage
-Users can modify the following parameters within the GUI prior to clicking the **Translate** button:
-* **Input Directory** - Where the uncompressed images can be found
-* **Output Directory** - Where the compressed images should be sent
-* **# of Files** - Max number of files to compress
-  * If a positive integer (≥0), the app will exit after that # of files
-  * NOTE: Output files that already exist do not count towards the number of files.
-
-### ~~Set Input/Output Directory~~
-
-* ~~Click the ‘Set Input Directory’ button, browse for the directory where **uncompressed image files** exist.~~
-
-* ~~Click the ‘Set Output Directory’ button, browse for the directory where **compressed image files** should be written.~~
-
-### ~~Review # of Files~~
-~~If a positive integer (≥0) then the application will only compress the specified number of files, otherwise all files are processed. **NOTE**: Output files that already exist do not count towards the number of files.~~
-
-### Click ‘Translate’
-The ‘Translate’ button will be disabled while the task is running.
-* The log will indicate what task it is starting.
-* Feedback is logged for each file completed.
-* Finally the word ‘Complete’ will indicate the task is finished, and the ‘Translate’ button will be re-enabled.
-* Wait for completion
-
 ## Getting Started
 GDAL is a library for reading and writing raster and vector geospatial data formats. This application loops through a user-defined input directory (non-recursive, optional: maximum number of files), calling ‘gdal_translate’ to compress each TIFF file into the specified output directory using the original filename. The GUI will be responsive while the command executes, which takes ~1 min per file and acheives ~95% compression.
 
@@ -43,6 +17,33 @@ A common use case for this application is for processing large image sets from a
 Make sure the system requirements have been met.
 
 The Java Application is distributed as a JAR file 'GDAL_Translate.jar', which can be downloaded from this GitHub Repo. Windows users can download then double click this file to run the application.
+
+## Usage
+Users can modify the following parameters within the GUI prior to clicking the **Translate** button:
+* **Input Directory** - Where the uncompressed images can be found
+* **Output Directory** - Where the compressed images should be sent
+* **# of Files** - Max number of files to compress
+  * If a positive integer (≥0), the app will exit after that # of files
+  * NOTE: Output files that already exist do not count towards the number of files.
+
+![screenshot](GDAL_Translator_Screenshot.PNG)
+
+
+### ~~Set Input/Output Directory~~
+
+* ~~Click the ‘Set Input Directory’ button, browse for the directory where **uncompressed image files** exist.~~
+
+* ~~Click the ‘Set Output Directory’ button, browse for the directory where **compressed image files** should be written.~~
+
+### ~~Review # of Files~~
+~~If a positive integer (≥0) then the application will only compress the specified number of files, otherwise all files are processed. **NOTE**: Output files that already exist do not count towards the number of files.~~
+
+### Click ‘Translate’
+The ‘Translate’ button will be disabled while the task is running.
+* The log will indicate what task it is starting.
+* Feedback is logged for each file completed.
+* Finally the word ‘Complete’ will indicate the task is finished, and the ‘Translate’ button will be re-enabled.
+* Wait for completion
 
 ## Release Process
 The source code and compiled JAR executable for this project were checked into this GitHub Repo upon initial release, and will be updated as this documentation is complete.
