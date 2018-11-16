@@ -10,14 +10,14 @@ Users can modify the following parameters within the GUI prior to clicking the *
 * **# of Files** - Max number of files to compress
   * **NOTE**: Output files that already exist do not count towards the number of files.
 
-~~### Set Input/Output Directory
+### ~~Set Input/Output Directory~~
 
 * ~~Click the ‘Set Input Directory’ button, browse for the directory where **uncompressed image files** exist.~~
 
 * ~~Click the ‘Set Output Directory’ button, browse for the directory where **compressed image files** should be written.~~
 
 ### ~~Review # of Files~~
-If a positive integer (≥0) then the application will only compress the specified number of files, otherwise all files are processed. **NOTE**: Output files that already exist do not count towards the number of files.
+~~If a positive integer (≥0) then the application will only compress the specified number of files, otherwise all files are processed. **NOTE**: Output files that already exist do not count towards the number of files.~~
 
 ### Click ‘Translate’
 The ‘Translate’ button will be disabled while the task is running.
