@@ -42,7 +42,7 @@ A common use case for this application is for processing large image sets from a
 ### Install / Run the Application
 Make sure the system requirements have been met.
 
-The Java Application is distributed as a JAR file 'GDAL_Transale.jar', which can be downloaded from this GitHub Repo. Windows users can download then double click this file to run the application.
+The Java Application is distributed as a JAR file 'GDAL_Translate.jar', which can be downloaded from this GitHub Repo. Windows users can download then double click this file to run the application.
 
 ## Release Process
 The source code and compiled JAR executable for this project were checked into this GitHub Repo upon initial release, and will be updated as this documentation is complete.
