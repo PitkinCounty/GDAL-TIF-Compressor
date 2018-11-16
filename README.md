@@ -4,10 +4,10 @@ This java desktop app iterates through an INPUT directory and compresses any TIF
 ![screenshot](GDAL_Translator_Screenshot.PNG)
 
 ## Usage
-Users can modify the following parameters within the GUI prior to clicking the ‘Translate’ button:
-* Where the uncompressed images can be found (Input Directory)
-* Where the compressed images should be sent (Output Directory)
-* Max number of files to compress (# of Files)
+Users can modify the following parameters within the GUI prior to clicking the **Translate** button:
+* **Input Directory** - Where the uncompressed images can be found
+* **Output Directory** - Where the compressed images should be sent
+* **# of Files** - Max number of files to compress
 
 ### Set Input/Output Directory
 Click the ‘Set Input Directory’ button, browse for the directory where **uncompressed image files** exist.
@@ -15,7 +15,7 @@ Click the ‘Set Input Directory’ button, browse for the directory where **unc
 Click the ‘Set Output Directory’ button, browse for the directory where **compressed image files** should be written.
 
 ### Review # of Files
-If this value is a positive integer (≥0) then the application will only compress the specified number of files, otherwise all files in the directory will be processed.
+If a positive integer (≥0) then the application will only compress the specified number of files, otherwise all files are processed.
 
 **NOTE**: Output files that already exist do not count towards the number of files.
 
